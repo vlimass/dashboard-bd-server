@@ -13,7 +13,7 @@ O **Dashboard BD** é um projeto realizado para o trabalho final da disciplina d
 Primeiramente, é necessário ter o `python` e o `npm` instalados em sua máquina. É possível verificar se essas dependências já estão no sistema por meio dos seguintes comandos: 
 ```
 python --version 
-python3 --version // Execute este comando caso tenha instalado o Python3
+python3 --version # Execute este comando caso tenha instalado o Python3
 mysql -V
 ```
 
@@ -29,15 +29,15 @@ cd dashboard-bd-server
 
 É necessário criar um banco MySQL em sua máquina que forneça os dados do back-end. Para isso, vamos inicialmente executar o seguinte comando para entrar no console `mysql`: 
 ```
-// Substitua as variáveis USERNAME, PASSWORD e HOSTNAMEORIP conforme as configurações do seu MySQL
-mysql -u USERNAME -pPASSWORD -h HOSTNAMEORIP // Exemplo: mysql -u usuario123 -psenha123 -h localhost
+# Substitua as variáveis USERNAME, PASSWORD e HOSTNAMEORIP conforme as configurações do seu MySQL
+mysql -u USERNAME -pPASSWORD -h HOSTNAMEORIP # Exemplo: mysql -u usuario123 -psenha123 -h localhost
 ```
 
 Dentro do console `mysql`, crie o banco de dados para armazenar os dados da aplicação, acesse-o e preencha-o com os dados do arquivo presente neste repositório chamado `CreateDatabase.sql`, que está na pasta `db`. Para isso, é necessário executar os seguintes comandos: 
 ```
 create database dashboard_bd;
 use dashboard_bd;
-source caminho/do/seu/computador/dashboard-bd-server/db/CreateDatabase.sql
+source caminho/do/seu/computador/dashboard-bd-server/db/CreateDatabase.sql # Preencha de acordo com o caminho do seu computador  
 ``` 
 
 Após isso, aguarde as queries do banco de dados serem executadas e, ao final, saia do console do `mysql` com o comando:
@@ -63,12 +63,12 @@ MYSQL_DATABASE=dashboard_bd
 Por fim, basta rodar o comando para rodar a aplicação: 
 ```
 python main.py
-python3 main.py // Execute este comando caso tenha instalado o Python3
+python3 main.py # Execute este comando caso tenha instalado o Python3
 ```
 
 Tudo pronto! Sua aplicação back-end está rodando e você pode observar os dados na interface do dashboard através de seu navegador em http://localhost:5173/. 
 
-<u>OBS</u>: Para ver os dados na interface do dashboard é necessário rodar a aplicação front-end simultaneamente! Saiba como rodar o front-end do projeto em https://github.com/vlimass/dashboard-bd-web.
+**IMPORTANTE**: Para ver os dados na interface do dashboard é necessário rodar a aplicação front-end simultaneamente! Saiba como rodar o front-end do projeto em https://github.com/vlimass/dashboard-bd-web.
 
 <hr>
 <div align="center">made with 🤍 by viny</div>
