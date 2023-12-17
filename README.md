@@ -72,7 +72,7 @@ Tudo pronto! Sua aplicação back-end está rodando e você pode observar os dad
 
 ### 📸 Preview do projeto
 
-![]()
+![](https://github.com/vlimass/dashboard-bd-server/blob/main/images/projetoBD.gif)
 
 <hr>
 <div align="center">made with 🤍 by viny</div>
