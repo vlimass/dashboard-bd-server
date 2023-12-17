@@ -1,6 +1,6 @@
 # API Dashboard BD  
 
-O **Dashboard BD** é um projeto realizado para o trabalho final da disciplina de Banco de Dados do curso de Ciência da Computação da UFRJ, feito em colaboração com Fábio Patão e Rhana Gomes. O objetivo foi desenvolver um dashboard para uma loja de roupas fictícia integrado à uma API que fornece dados armazenados em um banco MySQL. A base de dados pode ser acessada em https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset.
+O **Dashboard BD** é um projeto realizado para o trabalho final da disciplina de Banco de Dados do curso de Ciência da Computação da UFRJ, feito com a colaboração de Fábio Patão e Rhana Gomes. O objetivo foi desenvolver um dashboard para uma loja de roupas fictícia integrado à uma API que fornece dados armazenados em um banco MySQL. A base de dados pode ser acessada em https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset.
 
 ### 🛠 Tecnologias utilizadas
 
@@ -69,6 +69,10 @@ python3 main.py # Execute este comando caso tenha instalado o Python3
 Tudo pronto! Sua aplicação back-end está rodando e você pode observar os dados na interface do dashboard através de seu navegador em http://localhost:5173/. 
 
 **IMPORTANTE**: Para ver os dados na interface do dashboard é necessário rodar a aplicação front-end simultaneamente! Saiba como rodar o front-end do projeto em https://github.com/vlimass/dashboard-bd-web.
+
+### 📸 Preview do projeto
+
+![]()
 
 <hr>
 <div align="center">made with 🤍 by viny</div>
