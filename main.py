@@ -109,9 +109,9 @@ def getProductsSold():
 def getSalesPerSeason():
 
   myCursor.execute("""
-    SELECT Estação, SUM(Valor) as Vendas_Temporada 
+    SELECT Estacao, SUM(Valor) as Vendas_Temporada 
     FROM Produto 
-    GROUP BY Estação;
+    GROUP BY Estacao;
   """)
   result = myCursor.fetchall()
 
@@ -164,9 +164,9 @@ def getSalesPerLocation():
 def getNumberOfEachGenre():
 
   myCursor.execute("""
-    SELECT Gênero, COUNT(Gênero) as Contagem_Gênero 
+    SELECT Genero, COUNT(Genero) as Contagem_Genero 
     FROM Cliente_Assinatura 
-    GROUP BY Gênero;
+    GROUP BY Genero;
   """)
   result = myCursor.fetchall()
 
@@ -352,14 +352,14 @@ def getProductsCategories():
 def getColorsMostSaledPerGender():
 
   myCursor.execute("""
-    SELECT Cliente_Assinatura.Gênero as Gênero,
+    SELECT Cliente_Assinatura.Genero as Genero,
     Produto.Cor, COUNT(*) AS Quantidade_Vendida
     FROM Cliente_Assinatura
     JOIN Compra ON Cliente_Assinatura.id = Compra.FK_Cliente_Assinatura_id
     JOIN Tem ON Compra.ID_Compra = Tem.FK_Compra_id
     JOIN Produto ON Tem.FK_Produto_id = Produto.ID_Produto
-    GROUP BY Cliente_Assinatura.Gênero, Produto.Cor
-    ORDER BY Cliente_Assinatura.Gênero, Quantidade_Vendida DESC;
+    GROUP BY Cliente_Assinatura.Genero, Produto.Cor
+    ORDER BY Cliente_Assinatura.Genero, Quantidade_Vendida DESC;
   """)
   result = myCursor.fetchall()
 
