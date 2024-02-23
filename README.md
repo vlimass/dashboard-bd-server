@@ -60,6 +60,12 @@ MYSQL_PASSWORD=senha123
 MYSQL_DATABASE=dashboard_bd
 ```
 
+Para a instalação das dependências do Python da aplicação, execute o seguinte comando: 
+```
+pip install -r requirements.txt
+pip3 install -r requirements.txt # Caso o comando acima não funcione, tente executar este comando (você deve ter o Python3 instalado)
+```
+
 Por fim, basta rodar o comando para rodar a aplicação: 
 ```
 python main.py
